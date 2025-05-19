@@ -1,8 +1,18 @@
 import { db, waitListUser } from "~/db/index";
+import { eq } from 'drizzle-orm';
 
 export default defineEventHandler(async (event) => {
   try {
     const body = await readBody(event);
+
+
+    if (!body || !body.email || !body.type) {
+      return {
+        statusCode: 400,
+        message: "Invalid request. 'email' and 'type' are required fields.",
+      };
+    }
+
 
     const newEntry = {
       "id": crypto.randomUUID(),
@@ -11,9 +21,23 @@ export default defineEventHandler(async (event) => {
       "datetime": new Date().toISOString(),
     };
 
-    await db.insert(waitListUser).values(newEntry);
+    const user = await db.query.waitListUser.findFirst({
+      where: eq(waitListUser.email, body.email)
+    })
 
-    return newEntry;
+    if (!user) {
+      await db.insert(waitListUser).values(newEntry);
+      return newEntry;
+    } else {
+      return {
+      statusCode: 409,
+      message: "User with this email already exists.",
+      };
+    }
+
+
+
+
   } catch (error) {
     return error;
   }

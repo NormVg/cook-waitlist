@@ -24,7 +24,7 @@
   color: #fff;
   padding: 20px;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: var(--font);
   border-top: 5px solid var(--white);
   border-bottom: 5px solid var(--white);
   margin: 30px 0px;

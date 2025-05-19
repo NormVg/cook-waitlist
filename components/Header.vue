@@ -4,8 +4,8 @@
   <img :src="LogoCook" alt="cook image">
 
   <div id="header-nav">
-    <NuxtLink to="#feature-section" class="header-nav-item">FEATURES</NuxtLink>
-    <NuxtLink to="#wait-box" class="header-nav-item">JOIN WAITLIST</NuxtLink>
+    <div class="header-nav-item" @click="scrollToElement('#feature-section')">FEATURES</div>
+    <div class="header-nav-item" @click="scrollToElement('#wait-box')">JOIN WAITLIST</div>
     <!-- <a href="#" class="header-nav-item">FOLLOW JOURNEY</a> -->
   </div>
 

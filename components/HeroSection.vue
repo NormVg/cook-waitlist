@@ -2,7 +2,7 @@
 import MyBtn from "./MyBtn.vue";
 
 const waitlistCallback = () => {
-  return;
+scrollToElement("#wait-box")
 };
 </script>
 

@@ -5,9 +5,9 @@
     <div id="footer-head">COOK</div>
 
     <div id="footer-nav">
-      <a href="#" class="footer-nav-item">TWITTER/X</a>
-      <a href="#" class="footer-nav-item">GITHUB</a>
-      <a href="#" class="footer-nav-item">YOUTUBE</a>
+      <a href="https://x.com/TheNormVg" class="footer-nav-item">TWITTER/X</a>
+      <a href="https://github.com/TheAlphaOnes/cook" class="footer-nav-item">GITHUB</a>
+      <a href="https://youtube.com/@thenormvg" class="footer-nav-item">YOUTUBE</a>
     </div>
 
     <div id="footer-sub">
@@ -51,11 +51,11 @@
   transition: all 0.3s ease;
   color: whitesmoke;
   text-decoration: none;
-  border-bottom: 1px solid var(--bg);
+  border-bottom: 1px solid var(--bg2);
 }
 
 .footer-nav-item:hover {
-  border-bottom: 1px solid salmon;
+  border-bottom: 1px solid var(--red);
 }
 
 #footer-sub {
@@ -72,6 +72,6 @@
 }
 
 .footer-link:hover {
-  color: salmon;
+  color: var(--red);
 }
 </style>

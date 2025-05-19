@@ -58,4 +58,33 @@ const waitlistCallback = () => {
   align-items: left;
   flex-direction: column;
 }
+
+
+@media (max-width: 640px) {
+#hero-box{
+  flex-direction: column;
+  align-items: flex-start;
+  gap:30px;
+}
+
+
+
+#main-head {
+  font-size: 70px;
+}
+
+#main-sub {
+  font-size: 25px;
+}
+
+#main-des {
+  font-size: 17px;
+  color: var(--white);
+}
+
+
+
+
+
+}
 </style>

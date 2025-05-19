@@ -16,38 +16,23 @@ const props = defineProps({
 
 <template>
 
-  <div id="card-feature-box">
-    <div id="card-feature">
-      <div id="feature-icon">
-        {{ props.icon }}
-      </div>
+  <div id="card-feature">
+    <div id="feature-icon">
+      {{ props.icon }}
+    </div>
 
-      <div id="feature-head">
-        {{ props.head }}
-      </div>
+    <div id="feature-head">
+      {{ props.head }}
+    </div>
 
-      <div id="feature-sub">
-        {{ props.sub }}
-      </div>
+    <div id="feature-sub">
+      {{ props.sub }}
     </div>
   </div>
 </template>
 
 <style scoped>
-
-#card-feature-box{
-  width: max-content;
-  height: max-content;
-  background-color: var(--white);
-}
-
-#card-feature-box:hover #card-feature{
-transform: translate(-10px , -10px);
-}
-
 #card-feature {
-  background-color: var(--bg);
-
   border: 5px solid var(--white);
   width: 250px;
   aspect-ratio: 300/380;
@@ -58,8 +43,6 @@ transform: translate(-10px , -10px);
   align-items: center;
   flex-direction: column;
   gap: 30px;
-
-  transition: all 100ms ease-in-out;
 }
 
 #feature-icon {

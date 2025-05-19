@@ -155,6 +155,29 @@ const waitlistJoin = async () => {
   background-color: var(--bg);
   border: none;
   outline: none;
-  border-bottom: 3px dashed var(--red);
+  border-bottom: 3px dotted var(--red);
+}
+
+
+@media (max-width: 640px) {
+#wait-box{
+  margin:15px;
+}
+
+
+#wait-head{
+  font-size:25px
+}
+
+#wait-type-box{
+  /* border:1px solid red; */
+  margin:20px;
+  gap: 20px;
+}
+
+
+#wait-type-item {
+font-size: 13px;
+}
 }
 </style>

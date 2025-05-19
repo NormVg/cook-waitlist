@@ -280,4 +280,14 @@ onMounted(() => {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+
+
+@media (max-width: 640px) {
+
+.terminal{
+  margin:30px;
+  width: calc(100% - 110px);
+
+}
+}
 </style>

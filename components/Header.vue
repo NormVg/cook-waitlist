@@ -58,4 +58,21 @@ import LogoCook from "../assets/img/logo.svg"
   border-bottom: 1px solid salmon;
 }
 
+
+
+
+@media (max-width: 640px) {
+
+#header-box {
+
+  margin: 15px;
+  margin-top: 15px;
+
+}
+
+.header-nav-item {
+  font-size: 14px;
+}
+
+}
 </style>

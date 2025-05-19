@@ -1,33 +1,27 @@
 <script setup>
-import MyBtn from './MyBtn.vue';
+import MyBtn from "./MyBtn.vue";
 
-
-const waitlistCallback = ()=>{
-return
-}
-
+const waitlistCallback = () => {
+  return;
+};
 </script>
 
 <template>
-  <Header/>
+  <Header />
   <div id="hero-box">
-
-  <div id="main-box">
-
+    <div id="main-box">
       <div id="main-head">COOK</div>
-      <div id="main-sub">CODE COOKING FOR LAZY<br>DEVELOPERS</div>
-      <div id="main-des">A everyday CLI tool for you,<br>like Swiss Army knife,<br>But for the developers</div>
-      <div id="main-btn">
-
-        <MyBtn color="pink" :callback="waitlistCallback">
-          WAITLIST
-        </MyBtn>
+      <div id="main-sub">CODE COOKING FOR LAZY<br />DEVELOPERS</div>
+      <div id="main-des">
+        A everyday CLI tool for you,<br />like Swiss Army knife,<br />But for
+        the developers
       </div>
-
+      <div id="main-btn">
+        <MyBtn color="pink" :callback="waitlistCallback"> WAITLIST </MyBtn>
+      </div>
     </div>
-    <HeroTerminal/>
-</div>
-
+    <HeroTerminal />
+  </div>
 </template>
 
 <style scoped>
@@ -35,30 +29,25 @@ return
   color: var(--green);
   font-weight: bold;
   font-size: 100px;
-
 }
 
-#hero-box{
+#hero-box {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
 
-#main-sub{
+#main-sub {
   font-size: 38.2px;
   color: var(--blue);
 }
 
-#main-des{
+#main-des {
   font-size: 23.61px;
   color: var(--white);
-
 }
 
-
-
-#main-box{
+#main-box {
   /* border: 1px solid red; */
 
   gap: 30px;
@@ -69,6 +58,4 @@ return
   align-items: left;
   flex-direction: column;
 }
-
 </style>
-

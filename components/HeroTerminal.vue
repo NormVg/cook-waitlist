@@ -178,26 +178,26 @@ onMounted(() => {
 }
 
 .prompt {
-  color: #4caf50;
+  color: var(--green);
   margin-right: 10px;
 }
 
 .command {
-  color: #f0f0f0;
+  color: var(--white);
 }
 
 .output {
-  color: #d4b742;
+  color: var(--yellow);
   margin-left: 10px;
 }
 
 .version {
-  color: #d4b742;
+  color: var(--yellow);
   font-weight: bold;
 }
 
 .recipe-list {
-  color: #d4b742;
+  color: var(--yellow);
   list-style-type: none;
   margin: 0;
   padding: 0 0 0 10px;
@@ -209,26 +209,26 @@ onMounted(() => {
 }
 
 .success-icon {
-  color: #4caf50;
+  color: var(--green);
   margin-right: 10px;
 }
 
 .success-text {
-  color: #d4b742;
+  color: var(--yellow);
 }
 
 .arrow-icon {
-  color: #d4b742;
+  color: var(--yellow);
   margin-right: 10px;
 }
 
 .link-label {
-  color: #d4b742;
+  color: var(--yellow);
   margin-right: 10px;
 }
 
 .link-url {
-  color: #d4b742;
+  color: var(--yellow);
 }
 
 .cursor-line {
@@ -237,7 +237,7 @@ onMounted(() => {
 }
 
 .cursor {
-  background-color: #f0f0f0;
+  background-color: var(--white);
   display: inline-block;
   width: 8px;
   height: 16px;
@@ -254,9 +254,9 @@ onMounted(() => {
 
 .replay-button {
   background-color: #2c2c2c;
-  border: 1px solid #4caf50;
+  border: 1px solid var(--green);
   border-radius: 4px;
-  color: #4caf50;
+  color: var(--green);
   cursor: pointer;
   font-family: inherit;
   font-size: 12px;

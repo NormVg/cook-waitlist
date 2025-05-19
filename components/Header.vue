@@ -4,10 +4,9 @@
   <img :src="LogoCook" alt="cook image">
 
   <div id="header-nav">
-    <div class="header-nav-item">FEATURES</div>
-    <div class="header-nav-item">JOIN WAITLIST</div>
-    <div class="header-nav-item">FOLLOW JOURNEY</div>
-
+    <NuxtLink to="#feature-section" class="header-nav-item">FEATURES</NuxtLink>
+    <NuxtLink to="#wait-box" class="header-nav-item">JOIN WAITLIST</NuxtLink>
+    <!-- <a href="#" class="header-nav-item">FOLLOW JOURNEY</a> -->
   </div>
 
 </div>
@@ -15,24 +14,22 @@
 
 <script setup>
 import LogoCook from "../assets/img/logo.svg"
-
-
 </script>
 
 <style scoped>
 
-#header-box{
+#header-box {
   border: 5px solid var(--white);
   margin: 30px;
   margin-top: 5px;
-  height: 55px;
+  height: 65px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
 }
 
-#header-box img{
+#header-box img {
   height: 45px;
 }
 
@@ -49,14 +46,16 @@ import LogoCook from "../assets/img/logo.svg"
   font-size: 16px;
   font-weight: bold;
   color: var(--white);
+  text-decoration: none;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  border-bottom: 1px solid var(--bg);
+
 }
 
 .header-nav-item:hover {
-  color: var(--primary-color);
+
+  border-bottom: 1px solid salmon;
 }
-
-
 
 </style>

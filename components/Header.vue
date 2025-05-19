@@ -16,6 +16,7 @@
 <script setup>
 import LogoCook from "../assets/img/logo.svg"
 
+
 </script>
 
 <style scoped>

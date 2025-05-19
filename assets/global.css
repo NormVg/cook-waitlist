@@ -1,0 +1,23 @@
+:root{
+
+  --bg: #111010;
+  --white: #A8A7AC;
+  --pink: #E56EB2;
+  --bg2: #1A1A1A;
+  --blue: #B28BEB;
+  --green: #50FA7B;
+  --red: #D86159;
+  --yellow:#D6BC7F;
+
+  --font:'JetBrains Mono', 'Fira Code', monospace
+}
+
+*{
+  color: var(--white);
+}
+
+body{
+  background-color: var(--bg);
+  font-family: var(--font);
+
+}

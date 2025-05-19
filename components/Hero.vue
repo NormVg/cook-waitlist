@@ -1,0 +1,57 @@
+<script setup>
+import MyBtn from './MyBtn.vue';
+
+</script>
+
+<template>
+  <Header/>
+  <div id="main-box">
+    <div id="main-head">COOK</div>
+    <div id="main-sub">CODE COOKING FOR LAZY<br>DEVELOPERS</div>
+    <div id="main-des">A everyday CLI tool for you,<br>like Swiss Army knife,<br>But for the developers</div>
+    <div id="main-btn">
+
+      <MyBtn color="pink">
+        WAITLIST
+      </MyBtn>
+    </div>
+
+  </div>
+</template>
+
+<style scoped>
+#main-head {
+  color: var(--green);
+  font-weight: bold;
+  font-size: 100px;
+
+}
+
+
+#main-sub{
+  font-size: 38.2px;
+  color: var(--blue);
+}
+
+#main-des{
+  font-size: 23.61px;
+  color: var(--white);
+
+}
+
+
+
+#main-box{
+  /* border: 1px solid red; */
+
+  gap: 30px;
+  margin-left: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+}
+
+</style>
+
